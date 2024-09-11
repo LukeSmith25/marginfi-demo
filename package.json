@@ -1,0 +1,12 @@
+{
+  "name": "marginfi-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LukeSmith25/marginfi-demo.git",
+  "author": "Luke Smith <luke_smith10@baylor.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "@mrgnlabs/marginfi-client-v2": "^4.0.0",
+    "@mrgnlabs/mrgn-common": "^1.8.0"
+  }
+}
