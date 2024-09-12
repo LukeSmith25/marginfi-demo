@@ -6,12 +6,16 @@
   "author": "Luke Smith <luke_smith10@baylor.edu>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/marginfi-account-demo.ts"
+    "start": "ts-node src/marginfi-account-demo.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev src/marginfi-account-demo.ts",
+    "clean": "rm -rf dist && mkdir dist"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/node": "^22.5.4",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.2"
   },
   "dependencies": {

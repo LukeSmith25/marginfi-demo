@@ -3,7 +3,6 @@ import { MarginfiClient, getConfig } from '@mrgnlabs/marginfi-client-v2';
 import { NodeWallet } from "@mrgnlabs/mrgn-common";
 import * as dotenv from 'dotenv';
 
-// Load environment variables from .env
 dotenv.config();
 
 // Create the Solana connection and Marginfi client setup
@@ -28,7 +27,7 @@ const main = async () => {
 
     // Step 3: Fetch the SOL bank information
     const bankLabel = "SOL";
-    const bank = await client.getBankByTokenSymbol(bankLabel);
+    const bank = client.getBankByTokenSymbol(bankLabel);
     if (!bank) throw new Error(`${bankLabel} bank not found`);
     console.log(`Fetched Bank: ${bank.address}`);
 

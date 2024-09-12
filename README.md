@@ -1,3 +1,4 @@
+
 # Marginfi Account Demo
 
 Welcome to the **Marginfi Account Demo** repository! This project demonstrates how to interact with the Marginfi protocol on Solana using the official Marginfi TypeScript SDK. You will learn how to create Marginfi accounts, fetch accounts tied to your wallet, check balances, and borrow funds using the SDK.
@@ -36,7 +37,6 @@ The project structure is as follows:
 ### 1. Prerequisites
 
 - Node.js (v16.x or later)
-- Yarn (v1.22.x or later)
 - Solana CLI installed (follow instructions [here](https://docs.solana.com/cli/install-solana-cli-tools))
 - A Solana wallet (run `solana-keygen new` to create one if needed)
 
@@ -49,10 +49,22 @@ cd marginfi-demo
 
 ### 3. Install dependencies:
 
-Make sure to have Yarn installed and run the following command:
+You can install the dependencies using either Yarn or npm.
+
+#### Using Yarn:
+
+Make sure you have Yarn installed:
 
 ```bash
 yarn install
+```
+
+#### Using npm:
+
+If you prefer to use npm, run:
+
+```bash
+npm install
 ```
 
 ### 4. Set up environment variables:
@@ -68,14 +80,22 @@ WALLET_PATH=~/.config/solana/id.json  # Path to your Solana wallet keypair file
 
 The following scripts are defined in the `package.json`:
 
-- **`yarn start`**: Runs the Marginfi account demo.
-- **`yarn build`**: Compiles the TypeScript code into JavaScript in the `dist` folder.
-- **`yarn ts-node <file>`**: Runs a TypeScript file with `ts-node`.
+- **`yarn start`** / **`npm run start`**: Runs the Marginfi account demo.
+- **`yarn build`** / **`npm run build`**: Compiles the TypeScript code into JavaScript in the `dist` folder.
+- **`yarn ts-node <file>`** / **`npm run ts-node <file>`**: Runs a TypeScript file with `ts-node`.
 
 ### Run the demo:
 
+#### Using Yarn:
+
 ```bash
 yarn start
+```
+
+#### Using npm:
+
+```bash
+npm run start
 ```
 
 ## Environment Variables
