@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "types": ["node"]
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "examples"
+  ]
+}
