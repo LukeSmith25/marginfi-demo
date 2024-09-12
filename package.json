@@ -5,8 +5,20 @@
   "repository": "https://github.com/LukeSmith25/marginfi-demo.git",
   "author": "Luke Smith <luke_smith10@baylor.edu>",
   "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/marginfi-account-demo.ts"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
   "dependencies": {
     "@mrgnlabs/marginfi-client-v2": "^4.0.0",
-    "@mrgnlabs/mrgn-common": "^1.8.0"
+    "@mrgnlabs/mrgn-common": "^1.8.0",
+    "@solana/web3.js": "^1.95.3",
+    "debug": "^4.3.7",
+    "dotenv": "^16.4.5"
   }
 }
